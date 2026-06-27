@@ -38,6 +38,7 @@
             ui_font_weight = 500;
             ui_font_size = 14;
             active_pane_modifiers.border_size = 1;
+            inline_code_actions = false;
             toolbar = {
               breadcrumbs = false;
               quick_actions = false;

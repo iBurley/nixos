@@ -4,7 +4,6 @@
 
   environment.systemPackages =
     (with pkgs; [
-      discord
       ffmpeg
       imagemagick
       libnotify
@@ -14,7 +13,7 @@
       yt-dlp
     ])
     ++ (with pkgs-unstable; [
-      # unstable packages
+      discord
     ]);
 
 }
