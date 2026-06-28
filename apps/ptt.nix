@@ -19,7 +19,7 @@
       pttScript = pkgs.writeShellScriptBin "wayland-ptt" ''
         ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_AUDIO_SOURCE@ 1
 
-        ${pkgs.evtest}/bin/evtest "${devicePath}" | while IFS= read -r line; do
+        ${pkgs.evtest}/bin/evtest --grab "${devicePath}" | while IFS= read -r line; do
           case "$line" in
           *"(KEY_F24), value 1"*)
             ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_AUDIO_SOURCE@ 0
