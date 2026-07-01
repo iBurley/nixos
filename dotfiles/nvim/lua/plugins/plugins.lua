@@ -40,9 +40,6 @@ require("lualine").setup({
 -- NEO-TREE
 require("neo-tree").setup({})
 
--- RENDER MARKDOWN
-require("render-markdown").setup({})
-
 -- VAGUE
 require("vague").setup({})
 vim.cmd("colorscheme vague")

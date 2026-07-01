@@ -39,7 +39,7 @@
             neo-tree-nvim
             nvim-autopairs
             nvim-colorizer-lua
-            render-markdown-nvim
+            nvim-treesitter.withAllGrammars
             vague-nvim
           ];
         };
