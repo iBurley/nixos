@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-# Source API key from .env
 if [ -f "$HOME/.local/share/nautilus/scripts/.env" ]; then
   . "$HOME/.local/share/nautilus/scripts/.env"
 else
@@ -8,7 +7,6 @@ else
   exit 1
 fi
 
-# Check if curl and wl-copy are installed
 if ! command -v curl >/dev/null 2>&1; then
   notify-send -a "File Operation" "curl is not installed. Please install it to use this script."
   exit 1
@@ -18,12 +16,9 @@ if ! command -v wl-copy >/dev/null 2>&1; then
   exit 1
 fi
 
-# Loop through all selected files
 for file in "$@"; do
-  # Upload the file to Imgur
   response=$(curl -s -H "Authorization: Client-ID $IMGUR_API_KEY" -F "image=@$file" https://api.imgur.com/3/image)
 
-  # Extract the link from the response
   link=$(echo "$response" | grep -o '"link":"[^"]*' | cut -d'"' -f4)
 
   if [ -n "$link" ]; then
