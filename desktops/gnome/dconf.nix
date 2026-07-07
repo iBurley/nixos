@@ -10,6 +10,15 @@
       {
 
         dconf.settings = {
+          "org/freedesktop/tracker/miner/files".index-recursive-directories = [
+            "$HOME"
+            "&DESKTOP"
+            "&DOCUMENTS"
+            "&DOWNLOAD"
+            "&MUSIC"
+            "&PICTURES"
+            "&VIDEOS"
+          ];
           "org/gnome/desktop/app-folders".folder-children = [
             "Office"
             "Utilities"
