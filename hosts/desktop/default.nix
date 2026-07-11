@@ -12,6 +12,7 @@
   apps.mpv.enable = true;
   apps.ollama.enable = true;
   apps.ptt.enable = true;
+  apps.retroarch.enable = true;
   apps.spotify.enable = true;
   apps.steam.enable = true;
   apps.zed.enable = true;
