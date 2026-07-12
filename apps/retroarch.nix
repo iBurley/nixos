@@ -16,7 +16,9 @@
         cores: with cores; [
           beetle-psx
           bsnes
+          genesis-plus-gx
           mesen
+          mupen64plus
           pcsx2
           stella
         ]
