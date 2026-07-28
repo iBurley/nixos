@@ -41,7 +41,16 @@
             content_show_netplay = "false";
             content_show_video = "false";
             core_info_cache_enable = "false";
+            input_close_content_btn = "11"; # Start
             input_driver = "wayland";
+            input_enable_hotkey_btn = "10"; # Select
+            input_fps_toggle_btn = "3"; # Left Face
+            input_load_state_btn = "6"; # Left Bumper
+            input_max_users = "4";
+            input_menu_toggle_btn = "4"; # Top Face
+            input_save_state_btn = "7"; # Right Bumper
+            input_toggle_fast_forward_axis = "+4"; # Right Trigger
+            input_toggle_slowmotion_axis = "+5"; # Left Trigger
             menu_core_enable = "false";
             menu_left_thumbnails = "1";
             menu_show_dump_disc = "false";
@@ -63,6 +72,7 @@
             quick_menu_show_start_recording = "false";
             quick_menu_show_start_streaming = "false";
             quick_menu_show_take_screenshot = "false";
+            quit_press_twice = "false";
             rgui_browser_directory = "/mnt/Games/RetroArch";
             savefile_directory = "/mnt/Games/RetroArch/saves";
             savestate_auto_load = "true";
