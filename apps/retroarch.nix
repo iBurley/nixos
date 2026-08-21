@@ -32,6 +32,7 @@
           };
           settings = {
             audio_driver = "pipewire";
+            audio_fastforward_mute = "true";
             audio_volume = "-15";
             content_show_add_entry = "1";
             content_show_contentless_cores = "0";
@@ -65,6 +66,7 @@
             ozone_menu_color_theme = "11";
             ozone_sort_after_truncate_playlist_name = "true";
             ozone_thumbnail_scale_factor = "2";
+            pause_on_disconnect = "true";
             quick_menu_show_add_to_favorites = "false";
             quick_menu_show_cheats = "false";
             quick_menu_show_reset_core_association = "false";
