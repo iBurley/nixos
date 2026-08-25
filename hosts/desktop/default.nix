@@ -8,8 +8,8 @@
   ];
 
   apps.firefox.enable = true;
-  apps.neovim.enable = true;
   apps.mpv.enable = true;
+  apps.neovim.enable = true;
   apps.ollama.enable = true;
   apps.ptt.enable = true;
   apps.retroarch.enable = true;
