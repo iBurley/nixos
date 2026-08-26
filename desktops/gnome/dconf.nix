@@ -1,5 +1,8 @@
 { config, lib, ... }:
 
+let
+  wallpaperPath = "${../../assets/wallpaper.jpg}";
+in
 {
 
   config = lib.mkIf config.desktops.gnome.enable {
@@ -49,6 +52,10 @@
             ];
             name = "Utilities";
           };
+          "org/gnome/desktop/background" = {
+            picture-uri = "file://${wallpaperPath}";
+            picture-uri-dark = "file://${wallpaperPath}";
+          };
           "org/gnome/desktop/interface" = {
             accent-color = "blue";
             clock-format = "12h";
@@ -60,6 +67,7 @@
           };
           "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";
           "org/gnome/desktop/privacy".remember-recent-files = false;
+          "org/gnome/desktop/screensaver".picture-uri = "file://${wallpaperPath}";
           "org/gnome/desktop/wm/keybindings" = {
             activate-window-menu = [ ];
             begin-move = [ ];
