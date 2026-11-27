@@ -39,7 +39,7 @@
             content_show_explore = "false";
             content_show_favorites = "false";
             content_show_images = "false";
-            content_show_netplay = "false";
+            # content_show_netplay = "false";
             content_show_video = "false";
             core_info_cache_enable = "false";
             input_close_content_btn = "11"; # Start
@@ -63,6 +63,7 @@
             menu_show_overlays = "false";
             menu_show_rewind = "false";
             menu_timedate_style = "25";
+            netplay_nickname = "iBurley";
             ozone_menu_color_theme = "11";
             ozone_sort_after_truncate_playlist_name = "true";
             ozone_thumbnail_scale_factor = "2";
